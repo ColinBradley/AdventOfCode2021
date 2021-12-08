@@ -1,7 +1,7 @@
-﻿printfn "Number of increments: %i" (County.getDeltaCounts Data.values).IncrementCount
+﻿printfn "Number of increments: %i" (Utils.getDeltaCounts Data.values).IncrementCount
 
-let slidingWindowSums = County.getSlidingWindowSums Data.values
+let slidingWindowSums = Utils.getSlidingWindowSums Data.values
 
-printfn "Number of sliding window of increments: %i" (County.getDeltaCounts slidingWindowSums).IncrementCount
+printfn "Number of sliding window of increments: %i" (Utils.getDeltaCounts slidingWindowSums).IncrementCount
 
 exit 0

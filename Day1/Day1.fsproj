@@ -9,7 +9,7 @@
     <GenerateProgramFile>False</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="County.fs" />
+    <Compile Include="Utils.fs" />
     <Compile Include="Data.fs" />
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
