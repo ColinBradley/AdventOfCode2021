@@ -7,7 +7,7 @@ let getDeltaCounts items =
         (fun acc item ->
             match acc.PreviousValue with
             | p when p < item -> { acc with IncrementCount = acc.IncrementCount + 1; PreviousValue = item }
-            | p when p > item -> { acc with DecrementCount = acc.IncrementCount + 1; PreviousValue = item }
+            | p when p > item -> { acc with DecrementCount = acc.DecrementCount + 1; PreviousValue = item }
             | _ -> { acc with PreviousValue = item })
         { IncrementCount = 0; DecrementCount = 0; PreviousValue = Seq.head items }
         (Seq.tail items)
