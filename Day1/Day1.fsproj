@@ -9,8 +9,8 @@
     <GenerateProgramFile>False</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Utils.fs" />
     <Compile Include="Data.fs" />
+    <Compile Include="Utils.fs" />
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

@@ -16,8 +16,8 @@ let testValues =
 
 [<Fact>]
 let ``Provided example 1`` () =
-    Assert.Equal(7, (Utils.getDeltaCounts testValues).IncrementCount)
+    Assert.Equal(7, testValues |> Utils.getDeltaCounts )
 
 [<Fact>]
 let ``Provided example 2`` () =
-    Assert.Equal(5, (Utils.getSlidingWindowSums testValues |> Utils.getDeltaCounts).IncrementCount)
+    Assert.Equal(5, testValues |> Utils.getSlidingWindowSums |> Utils.getDeltaCounts)
