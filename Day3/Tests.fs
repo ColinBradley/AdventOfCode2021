@@ -10,5 +10,15 @@ let ``Example 1`` () =
             Gamma = 22
             Epsilon = 9
         |},
-        Utils.getRates Data.example1
+        Utils.getPowerRates Data.example1
+    )
+
+[<Fact>]
+let ``Example 2`` () =
+    Assert.StrictEqual(
+        {| 
+            Oxygen = 23
+            CO2 = 10
+        |},
+        Utils.getLifeSupportRates Data.example1
     )

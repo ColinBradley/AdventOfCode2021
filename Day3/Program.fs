@@ -1,3 +1,7 @@
-let result = Utils.getRates Data.userData
+let powerResult = Utils.getPowerRates Data.userData
 
-printf "Power consumption = %i" (result.Gamma * result.Epsilon)
+printfn "Power consumption = %i" (powerResult.Gamma * powerResult.Epsilon)
+
+let lifeSupportResult = Utils.getLifeSupportRates Data.userData
+
+printfn "Life support rating = %i" (lifeSupportResult.Oxygen * lifeSupportResult.CO2)
